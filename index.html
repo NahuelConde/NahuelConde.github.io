@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f884c5e290.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="container">
+        <section class="left">
+            <div class="name">
+            <img src="https://randomuser.me/api/portraits/men/94.jpg" alt="No se pudo cargar correctamente la foto." id="foto">
+            <h1>Levi Franklin</h1> 
+            <span>Programador Web</span>
+            </div>
+
+            <div class="datos">
+            <h2>Datos Personales</h2>
+            <ul>
+                <li>
+                    <span class="icon" onclick="changeNumero()"><i class="fa-solid fa-phone"></i></span>
+                    <span class="text" id="telefono">Telefono</span>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <span class="icon" onclick="changeMail()"><i class="fa-regular fa-envelope"></i></span>
+                    <span class="text" id="mail">Correo Electronico</span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span class="icon" onclick="changeFecha()"><i class="fa-solid fa-calendar-days"></i></span>
+                    <span class="text" id="fecha">Fecha de nacimiento</span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span class="icon" onclick="changeDoc()"><i class="fa-regular fa-id-card"></i></span>
+                    <span class="text" id="documento">Documento</span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span class="icon" onclick="changeAdress()"><i class="fa-solid fa-location-dot"></i></span>
+                    <span class="text" id="adress">Domicilio</span>
+                </li>
+            </ul>
+            </div>
+    
+            <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://ar.linkedin.com/" target="_blank" rel="noopener noreferrer" ><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <div class="datos education">
+            <h2>Educacion</h2>
+            <ul>
+                <li>
+                    <h4>2013-2019</h4>
+                    <h3>Tecnicatura Universitaria en Programación</h3>
+                    <h3>Universidad Tecnológica Nacional</h3>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h4>2002-2008</h4>
+                    <h3>Técnico en Administración de empresas</h3>
+                    <h3>Escuela secundaria Redwood</h3>
+                </li>
+            </ul>
+            </div>
+
+            <div class="datos idiomas">
+                <h2>Idiomas</h2>
+                <ul>
+                    <li>
+                        <h3>Ingles</h3>
+                        <h4>Avanzado</h4>
+                    </li>
+                    <li>
+                        <h3>Español</h3>
+                        <h4>Avanzado</h4>
+                    </li>
+                    <li>
+                        <h3>Italiano</h3>
+                        <h4>Intermedio</h4>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    <section class="right">
+        <div class="sobre">
+        <h2>Acerca de mi</h2>
+        <p>Soy un Técnico Informático con más de 2 años de experiencia en industrias de desarrollo de software y tecnología. Me especializo en asesoría técnica y asistencia en el mantenimiento de ordenadores. He trabajado con empresas que integran una plantilla de más de 500 empleados, con un índice de satisfacción del 95%. Quiero brindar la misma calidad en su compañía y optimizar el rendimiento de los sistemas.</p>
+        </div>
+        
+        <div class="sobre">
+        <h2>Experiencia Laboral</h2>
+            <table>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                <h4>2021 - Actualidad</h4>
+                                <h4>Hardware&Software S.A.</h4>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <h3>Programador Web</h3>
+                                <p>Me desempeño desarrollando paginas web para clientes de la empresa del sector financiero utilizando Javascript(html, css), ademas de brindar mantenimiento a las paginas, y gestionar el manejo de datos(JSON, SQL).</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                <h4>2015 - 2020</h4>
+                                <h4>SAW Technologies S.A.</h4>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <h3>Operador</h3>
+                                <p>En esta empresa trabaje brindando atención personalizada para muchos clientes de forma remota, en la cual me encargaba de la resolución de sus problemas en cuanto a los servicios que ellos contrataban, brindando tanto información como soporte.</p>
+                                <p>Ademas de gestionar la facturacion y los pagos de los clientes toda mis funciones se realizaban utilizando los sistemas propios de la empresa.</p>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="sobre">
+            <h2>Proyectos</h2>
+
+            <img src="https://neilpatel.com/wp-content/uploads/2017/12/codigos-html-para-paginas-web.jpeg" alt="No se pudo cargar la imagen." class="ImgP">
+            <h3>Aplicacion</h3>
+            <p>Realice una aplicación en la cual el usuario podia organizar sus gastos y sus ingresos. La cual registra por fecha los movimientos de dinero y después revisa los totales diarios, mensuales o anuales en los reportes.</p>
+            <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Mas informacion</a>
+        </div>
+
+        <div class="sobre">
+            <img src="https://media.gettyimages.com/id/1219854221/es/foto/concepto-de-desarrollo-y-codificaci%C3%B3n-del-dise%C3%B1o-web.jpg?s=612x612&w=0&k=20&c=b2NkqxW1D98ONujW9jV--VbrIwzgL66WwEu2vwy6VBk=" alt="No se pudo cargar la imagen." class="ImgP">
+            <h3>Pagina web</h3>
+            <p>Este es un proyecto que trabaje de manera independiente en el cual desarrolle una pagina web para una tienda de informatica, la cual queria algo sensillo para que los clientes supieran que tipo de productos vendian y se pudieran poner en contacto para una cotización.</p>
+            <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Mas informacion</a>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="Formulario">
+            <form action="" id="form" class="form">
+                <h3>Contactame</h3>
+                <label for="name">Nombre Completo <span>*</span></label>
+                <input type="text" name="name" id="name" placeholder="Nombre" required>
+                <label for="email">Correo electronico <span>*</span></label>
+                <input type="text" name="email" id="email" placeholder="ejemplo@ejemplo.com" required>
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <button type="submit" class="contact button">Enviar mensaje</button>
+            </form>
+            <a href="mailto:levi.franklin@example.com" id="sender">mail</a>
+        </div>
+    </section>
+</section>
+    <script src="js/funciones.js"></script>
+</body>
+</html>

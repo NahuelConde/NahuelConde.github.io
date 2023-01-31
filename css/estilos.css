@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppin', sans-serif;
+}
+
+body{
+    background-color: #484848;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background-color: white;
+    display: grid;
+    grid-template-areas: "left right" "bottom bottom";
+    grid-template-columns: 1fr 2fr;
+    box-sizing: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .left{
+    position: relative;
+    background-color: #fdddca;
+    padding: 40px;
+    grid-area: left;
+}
+
+#foto{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 1px black solid;
+}
+
+.name{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+h1{
+    font-size: 26px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+.name span{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.datos{
+    padding-top: 40px;
+}
+
+.datos h2{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.datos ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.icon{
+    width: 30px;
+    padding: 3px;
+    margin-right: 5px;
+    font-size: 18px;
+    color: #9e7a51;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0,0.25);
+    border-radius: 50%;
+}
+
+.datos ul li span{
+    font-weight: 300;
+}
+
+.redes{
+    text-align: center;
+}
+
+.fa-brands {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+    color: black;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+    transition: 0.3s ease;
+}
+
+.fa-brands:hover{
+    background-color: #1DA1F2;
+    color: white;
+    box-shadow: 0 0 15px #1DA1F2;
+}
+
+.datos.education li{
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.datos.education h4{
+    color: #9e7a51;
+    font-weight: 900;
+}
+
+.datos.education h3:nth-child(3){
+    font-weight: lighter;
+    color: gray;
+}
+
+.datos.education h3{
+    font-weight: 600;
+}
+
+.idiomas h4{
+    color: gray;
+}
+
+.container .right{
+    position: relative;
+    background-color: white;
+    padding: 40px;
+    grid: right;
+}
+
+.sobre{
+    margin-bottom: 50px;
+}
+
+.sobre h2{
+    color: #9e7a51;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+table{
+    margin: 15px;
+}
+
+.sobre li{
+    list-style: none;
+    line-height: 1.5;
+}
+
+.sobre h4{
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.sobre h3{
+    text-transform: uppercase;
+    color: #9e7a51;
+    font-size: 16px;
+}
+
+a:link{
+    color: blueviolet;
+}
+
+a:visited{
+    color: #1DA1F2;
+}
+
+a:hover{
+    color: #9e7a51;
+}
+
+a:active{
+    color: black;
+}
+
+.ImgP{
+    max-width: 260px;
+    height: 180px;
+}
+
+.contact {
+    grid-area: bottom;
+    background-color: #484848;
+    color: white;
+} 
+
+.contact h3{
+    font-size: 26px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fdddca;
+}
+
+.form {
+    max-inline-size: 550px;
+    margin: auto;
+}
+
+.form label{
+    display: block;
+    margin-block-start: 16px;
+    margin-block-end: 8px;
+    padding-inline-start: 8px;
+    font-weight: 600;
+}
+
+.form label span{
+    color: #DA1414;
+}
+
+.form input, .form textarea{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    padding: 13px;
+    border-radius: 10px;
+    border: 2px solid #fdddca;
+}
+
+.form textarea{
+    resize: none;
+}
+
+.button{
+    background-color: #fdddca;
+    color: black;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2px solid #fdddca;
+}
+
+#sender{
+    opacity: 0;
+}
+
+@media (max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-areas: 
+            "left"
+            "rigth"
+            "bottom";
+        grid-template-columns: repeat(1,1fr);
+    }
+}
